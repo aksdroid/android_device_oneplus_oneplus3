@@ -194,7 +194,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap \
     libcamera_parameters_shim \
     libcamera_shim \
     camera.device@1.0-impl \
@@ -494,6 +493,10 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
+
+# Extras
+PRODUCT_PACKAGES += \
+    Launcher3alt
 
 # Inherit from oppo-common
 $(call inherit-product, device/oppo/common/common.mk)
