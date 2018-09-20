@@ -501,5 +501,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Launcher3alt
 
+# Sysconfig
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilts/etc/google-hiddenapi-package-whitelist.xml:system/etc/sysconfig/google-hiddenapi-package-whitelist.xml
+
 # Inherit from oppo-common
 $(call inherit-product, device/oppo/common/common.mk)
