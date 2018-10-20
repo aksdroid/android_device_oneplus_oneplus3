@@ -27,7 +27,7 @@ $(call inherit-product, vendor/arrow/config/common.mk)
 # PRODUCT_PROPERTY_OVERRIDES += \
 #     ro.lineage.build.vendor_security_patch=2018-07-01
 
-PRODUCT_NAME := arrow_oneplus3
+PRODUCT_NAME := dotos_oneplus3
 PRODUCT_DEVICE := oneplus3
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus

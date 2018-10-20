@@ -1,2 +1,2 @@
-add_lunch_combo arrow_oneplus3-userdebug
-add_lunch_combo arrow_oneplus3-eng
+add_lunch_combo dotos_oneplus3-userdebug
+add_lunch_combo dotos_oneplus3-eng
