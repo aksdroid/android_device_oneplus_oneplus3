@@ -194,6 +194,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    Snap \
     libcamera_parameters_shim \
     libcamera_shim \
     camera.device@1.0-impl \
@@ -470,13 +471,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.vr.high_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vr.high_performance.xml
 
-# IPA Manager
-# PRODUCT_PACKAGES += \
-    ipacm \
-    IPACM_cfg.xml
-
 # Wifi
 PRODUCT_PACKAGES += \
+    ipacm \
+    IPACM_cfg.xml \
     libqsap_sdk \
     libQWiFiSoftApCfg \
     libwpa_client \
@@ -496,14 +494,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
-
-# Extras
-PRODUCT_PACKAGES += \
-    Launcher3alt
-
-# Sysconfig
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilts/etc/google-hiddenapi-package-whitelist.xml:system/etc/sysconfig/google-hiddenapi-package-whitelist.xml
 
 # Inherit from oppo-common
 $(call inherit-product, device/oppo/common/common.mk)
