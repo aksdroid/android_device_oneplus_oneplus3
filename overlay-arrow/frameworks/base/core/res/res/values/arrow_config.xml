@@ -20,7 +20,11 @@
     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
 
     <!-- Whether the display blanks itself when transition from a doze to a non-doze state -->
+<<<<<<< HEAD
     <bool name="config_displayBlanksAfterDoze">true</bool>
+=======
+    <bool name="config_displayBlanksAfterDoze">false</bool>
+>>>>>>> 755d4de3dbeaa4d3539e586eb031ae5dac3956de
 
     <!-- Flashlight on power button -->
     <integer name="config_flashlightProximityTimeout">3000</integer>
